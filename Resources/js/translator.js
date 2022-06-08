@@ -611,7 +611,7 @@
      */
     function get_current_locale() {
         if (typeof document !== 'undefined') {
-            return document.documentElement.lang.replace('-', '_');
+            return document.documentElement.lang; //.replace('-', '_');
         }
         else {
             return _fallbackLocale;
